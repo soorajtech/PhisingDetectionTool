@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trogen Phishing Detection Tool</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Trogen Phishing Detection Tool</h2>
+        <p><em>Developed by Sooraj</em></p>
+        <form method="POST">
+            <input type="text" name="url" placeholder="Enter URL" required />
+            <button type="submit">Check</button>
+        </form>
+        {% if result %}
+            <div class="result">{{ result }}</div>
+        {% endif %}
+    </div>
+</body>
+</html>
